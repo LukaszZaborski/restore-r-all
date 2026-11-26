@@ -56,7 +56,7 @@ val restoreRAllPatch = resourcePatch(
 
     // TODO: copy the compatibility declaration from another Reddit patch in your repo
     // (the exact API differs between patcher versions).
-    compatibleWith("com.reddit.frontpage")
+    compatibleWith(COMPATIBILITY_REDDIT)
 
     execute {
         var packageName = ""
