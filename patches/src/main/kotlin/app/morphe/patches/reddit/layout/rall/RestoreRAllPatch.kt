@@ -4,8 +4,8 @@ import app.morphe.patcher.patch.resourcePatch
 // TODO: use the same imports/signatures as the other Reddit patches in your repo for these two:
 
 
-
-
+import org.w3c.dom.Element
+import org.w3c.dom.NodeList
 import app.morphe.patches.reddit.misc.extension.hooks.redditActivityOnCreateHook
 import app.morphe.patches.reddit.misc.extension.hooks.redditApplicationOnCreateHook
 import app.morphe.patches.all.misc.extension.sharedExtensionPatch
