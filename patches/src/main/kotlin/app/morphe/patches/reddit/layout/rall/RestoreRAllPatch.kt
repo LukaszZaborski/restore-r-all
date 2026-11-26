@@ -52,11 +52,11 @@ val restoreRAllPatch = resourcePatch(
     default = true,
 ) {
     // Merges the extension dex, which contains RAllActivity.
-    dependsOn(sharedExtensionPatch)
+    dependsOn(sharedExtensionPatch())
+    compatibleWith(COMPATIBILITY_REDDIT)
 
     // TODO: copy the compatibility declaration from another Reddit patch in your repo
     // (the exact API differs between patcher versions).
-    compatibleWith(COMPATIBILITY_REDDIT)
 
     execute {
         var packageName = ""
